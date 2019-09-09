@@ -1,8 +1,9 @@
 # Instructions
 
-### **1. Install PostgreSQL and create a new database**
+### **1. Install PostgreSQL, pgAdmin and create a new database**
 		 1.1 - https://www.postgresql.org/download/
-		 1.2 - Create a new database
+		 1.2 - [pgAdmin](https://www.pgadmin.org/download "PostgreSQL Tools")
+		 1.3 - Create a new database
 
 ### **2. Create a 'secrets.json' file with your SECRET_KEY, DB_NAME, DB_USER, DB_PASSWORD and ALLOWED_HOSTS**
 		 Example: https://ibb.co/df6rnb3		 
