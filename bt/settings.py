@@ -21,7 +21,7 @@ SECRET_KEY = get_secret('SECRET_KEY')
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = get_secret('ALLOWED_HOSTS')
 
 # Application definition
 
@@ -73,7 +73,7 @@ WSGI_APPLICATION = 'bt.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'btdb',
+        'NAME': get_secret('DB_NAME'),
         'USER': get_secret('DB_USER'),
         'PASSWORD': get_secret('DB_PASSWORD'),
         'HOST': 'localhost'
